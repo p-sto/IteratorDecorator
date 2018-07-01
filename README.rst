@@ -1,3 +1,9 @@
+.. image:: https://travis-ci.org/stovorov/IteratorDecorator.svg?branch=master
+    :target: https://travis-ci.org/stovorov/IteratorDecorator
+
+.. image:: https://codecov.io/gh/stovorov/IteratorDecorator/branch/master/graph/badge.svg
+  :target: https://codecov.io/gh/stovorov/IteratorDecorator
+
 IteratorDecorator
 =================
 
@@ -31,21 +37,15 @@ Example
     for num in obj:
         print(num)
 
+
 Installing
 ----------
 
-You can either clone repo and create egg file manually by running ``make dist`` or add requirement
-to ``requirements.txt`` file with line:
+In your virtualenv just call:
 
-``-e git://github.com/stovorov/IteratorDecorator.git#egg=IteratorDecorator``
+::
 
-pip will then clone repo and create distribution file in venv/src of your project. Then you can use code like
-normal library:
-
-
-.. code:: python
-
-    from IteratorDecorator import iter_attribute
+    $ pip install IteratorDecorator
 
 
 Warning
@@ -57,7 +57,7 @@ is being done statically rather than dynamically. MYPY checks for definition of 
 changes at runtime. Since ``__iter__`` and ``__next__`` are added dynamically MYPY cannot find those
 defined in objects before object of a class is created. Possible workarounds for this issue are:
 
-1. Define ``__iter__`` class like:
+1. Define ``__iter__`` method in class:
 
 .. code:: python
 

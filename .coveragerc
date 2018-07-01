@@ -1,0 +1,14 @@
+[run]
+branch = True
+
+source = IteratorDecorator
+
+[report]
+exclude_lines =
+      pass
+ignore_errors = False
+
+omit =
+      tests/*
+      IteratorDecorator/__init__.py
+show_missing = True
