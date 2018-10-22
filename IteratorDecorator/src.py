@@ -78,6 +78,7 @@ def iter_attribute(iterable_name) -> Union[Iterable, Callable]:
                 val = getattr(instance, iterable_name)[ind]
                 instance.iterator_attr_index += 1
                 return val
+            instance.iterator_attr_index = 0
             raise StopIteration
 
         dct = dict(decorated_class.__dict__)

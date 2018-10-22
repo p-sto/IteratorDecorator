@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(name='IteratorDecorator',
-      version='0.1',
+      version='0.1b',
       url='https://github.com/stovorov/IteratorDecorator',
       license='MIT',
       author='Pawel Stoworowicz',

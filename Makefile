@@ -41,7 +41,7 @@ test_mypy:
 test: test_pylint test_mypy test_pytest test_gen_coverage_rep
 
 dist: test
-	$(shell) python setup.py sdist
+	$(shell) python setup.py sdist bdist_wheel
 
 clean:
 	rm -rf htmlcov
