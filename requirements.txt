@@ -3,7 +3,7 @@ atomicwrites==1.1.5
 attrs==18.1.0
 certifi==2018.4.16
 chardet==3.0.4
-codecov==2.0.15
+codecov==2.0.16
 coverage==4.5.1
 idna==2.7
 isort==4.3.4
